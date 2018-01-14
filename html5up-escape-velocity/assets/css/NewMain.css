@@ -1,0 +1,151 @@
+.wrapper.style1 .title {
+    background: #7c5f13 url("images/overlay.png");
+    color: #fff;
+}
+
+.wrapper.style1 {
+    background: #7c5f13 url("images/overlay.png");
+    color: #fff;
+}
+
+#highlights .highlight {
+    text-align: center;
+}
+
+#highlights .highlight h3 {
+    color: #947117;
+}
+
+.feature-list h3 {
+    color: #947117 !important;
+}
+
+/* Button */
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    display: inline-block;
+    background: #444;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+    border-radius: 0.35em;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover,
+.button:hover {
+    background-color: #947117;
+}
+
+input[type="button"].style1,
+input[type="submit"].style1,
+input[type="reset"].style1,
+button.style1,
+.button.style1 {
+    background: #826414 url("images/overlay.png");
+    color: #fff;
+}
+
+input[type="button"].style1:hover,
+input[type="submit"].style1:hover,
+input[type="reset"].style1:hover,
+button.style1:hover,
+.button.style1:hover {
+    background-color: #9C7718;
+}
+
+input[type="button"].style1:active,
+input[type="submit"].style1:active,
+input[type="reset"].style1:active,
+button.style1:active,
+.button.style1:active {
+    background-color: #7c5f13;
+}
+
+input[type="button"].style2,
+input[type="submit"].style2,
+input[type="reset"].style2,
+button.style2,
+.button.style2 {
+    background: none;
+    color: #606167;
+    box-shadow: inset 0px 0px 2px 0px #a0a1a7;
+}
+
+input[type="button"].style2:hover,
+input[type="submit"].style2:hover,
+input[type="reset"].style2:hover,
+button.style2:hover,
+.button.style2:hover {
+    box-shadow: inset 0px 0px 2px 0px #606167;
+}
+
+input[type="button"].style2:active,
+input[type="submit"].style2:active,
+input[type="reset"].style2:active,
+button.style2:active,
+.button.style2:active {
+    box-shadow: inset 0px 0px 2px 0px #202127;
+}
+
+input[type="button"].style3,
+input[type="submit"].style3,
+input[type="reset"].style3,
+button.style3,
+.button.style3 {
+    background: #2f333b url("images/overlay.png");
+    color: #fff;
+}
+
+input[type="button"].style3:hover,
+input[type="submit"].style3:hover,
+input[type="reset"].style3:hover,
+button.style3:hover,
+.button.style3:hover {
+    background-color: #3f434b;
+}
+
+input[type="button"].style3:active,
+input[type="submit"].style3:active,
+input[type="reset"].style3:active,
+button.style3:active,
+.button.style3:active {
+    background-color: #1f232b;
+}
+
+.wrapper.style3 .title {
+    background: #3B3F4C url("images/overlay.png");
+    color: #fff;
+}
+
+.wrapper.style3 {
+    background: #3B3F4C url("images/overlay.png");
+    color: #fff;
+}
+
+div.logo-container {
+    border-radius: 4px;
+    background-color: #3B3F4C;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.logo-container h1 {
+    margin-top: 6px;
+    opacity: 1;
+}
