@@ -251,3 +251,11 @@ div.logo-container h1 {
 .foto-container {
     margin-left: 18%;
 }
+
+iframe:focus {
+    outline: none;
+}
+
+iframe[seamless] {
+    display: block;
+}
