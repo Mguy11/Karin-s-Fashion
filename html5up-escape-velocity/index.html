@@ -109,7 +109,7 @@
     </div>
 </div>
 
-<!-- Highlights -->
+<!-- Foto's -->
 <div class="wrapper style3">
     <div class="title">Foto's</div>
     <div class="row 150%">
@@ -226,8 +226,9 @@
             <div class="6u 12u(mobile)">
 
                 <!-- Contact Form -->
-                <section>
-                    <form method="post" action="#">
+                <section id="contact" class="feature-list small">
+                    <h3>Contact</h3>
+                    <form method="post" action="mailto:karinlips67@gmail.com">
                         <div class="row 50%">
                             <div class="6u 12u(mobile)">
                                 <input type="text" name="name" id="contact-name" placeholder="Naam"/>
@@ -274,7 +275,9 @@
                                 <h3 class="icon fa-comment">Social media</h3>
                                 <p>
                                     <a href="https://facebook.com/Karins-Fashion-1885361171745030/" target="_blank">Facebook</a>
-                                    <a href="mailto:bearmediamail@gmail.com?Subject=Vragen">bearmediamail@gmail.com</a>
+                                </p>
+                                <p>
+                                    <a href="mailto:bearmediamail@gmail.com?Subject=Vragen">karinlips67@gmail.com</a>
 
                                 </p>
                             </section>
@@ -285,12 +288,18 @@
                             <section>
                                 <h3 class="icon fa-envelope">Openingstijden</h3>
                                 <p>
-                                    Ma: 10:00 tot 17:00<br>
-                                    Di: Gesloten <br>
-                                    Wo: 10:00 tot 17:00<br>
-                                    Do: 10:00 tot 17:00<br>
-                                    Vr: 10:00 tot 17:00<br>
-                                    Za: 10:00 tot 17:00<br>
+                                    <strong>Ma:</strong> 10:00 tot 17:00<br>
+                                    <strong>Di:</strong> Gesloten <br>
+                                    <strong>Wo:</strong> 10:00 tot 17:00<br>
+                                    <strong>Do:</strong> 10:00 tot 17:00<br>
+                                    <strong>Vr:</strong> 10:00 tot 17:00<br>
+                                    <strong>Za:</strong> 10:00 tot 17:00<br>
+                                </p>
+                                <p>-------------------------</p>
+                                <p>
+                                    <strong>Koopzondag</strong><br>
+                                    1e Zo v/d maand:<br>
+                                    12:00 tot 17:00<br>
                                 </p>
                             </section>
                         </div>
@@ -311,7 +320,7 @@
     </div>
     <div id="copyright">
         <ul>
-            <li>&copy; BearMedia</li>
+            <li><a href="https://www.bear-media.nl" target="_blank_">&copy; BearMedia</a></li>
             <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
     </div>
@@ -321,6 +330,22 @@
 
 <!-- Scripts -->
 
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 5000); // Change image every 2 seconds
+    }
+</script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.dropotron.min.js"></script>
 <script src="assets/js/skel.min.js"></script>

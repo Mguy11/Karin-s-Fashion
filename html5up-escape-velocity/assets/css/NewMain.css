@@ -165,7 +165,7 @@ div.logo-container h1 {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 80%;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -261,16 +261,18 @@ iframe[seamless] {
 }
 
 #tijden{
-    text-align: center;
+    text-align: left;
 }
 
-.foto{
-    margin-left: 8%;
-    margin-top: 5%;
-    margin-bottom: 3%;
+#foto{
+    display: block;
     max-width: 100%;
-    max-height: 15%;
     height: auto;
 }
 
-
+.w3-quarter {
+    width: 24.99999%
+}
+.w3-half {
+    width: 49.99999%
+}
