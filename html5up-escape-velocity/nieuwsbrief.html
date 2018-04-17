@@ -9,6 +9,7 @@
     <title>Karin's Fashion</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="keywords" content="Karins, Fashion, Brielle, Kledingwinkel">
     <!--[if lte IE 8]>
     <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css"/>
@@ -80,6 +81,14 @@
     <!-- Footer -->
     <div id="footer-wrapper" class="wrapper">
         <div class="title">Overige informatie</div>
+        <div id="google-map">
+            <div id="googlemaps" class="feature-list small">
+                <h3>Locatie winkel</h3>
+
+                <div id="map">
+                </div>
+            </div>
+        </div>
         <div id="footer" class="container">
             <hr/>
             <div class="row 150%">
@@ -189,7 +198,26 @@
 </div>
 
 <!-- Scripts -->
+<script>
 
+    //Load the GoogleMaps with the campings location
+    function initMap() {
+        var brielle = {lat: 51.902895, lng: 4.165150};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: brielle
+        });
+
+        var winkel = {lat: 51.902895, lng: 4.165150};
+        var marker = new google.maps.Marker({
+            position: winkel,
+            map: map
+        });
+    }
+</script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1PE0U-AeOoDOUxCLmuQpQU4MNF8RW_mQ &callback=initMap"
+        async defer></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.dropotron.min.js"></script>
 <script src="assets/js/skel.min.js"></script>
